@@ -1,0 +1,24 @@
+block vars
+
+
+doctype html
+html(lang="ua")
+  head
+    meta(charset='UTF-8')
+    title #{title}
+    block metatags
+      meta(name="description" content=Description)
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    block links
+      link(rel='preconnect' href='https://fonts.gstatic.com')
+      link(href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap' rel='stylesheet')
+
+  body
+    include pug/header.pug
+
+    block content
+
+    include pug/footer.pug
+
+    block script

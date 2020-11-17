@@ -1,0 +1,77 @@
+.contact{
+
+  background-size: cover;
+  padding-top: 74px;
+  padding-bottom: 87px;
+  margin-top: 135px;
+  @media (max-width:991px) {
+    margin-top: 50px;
+    padding-top: 50px;
+
+    padding-bottom: 50px;
+  }
+  &__container{
+    padding: 0 80px;
+    @media (max-width:991px) {
+      padding: 0 25px;
+    }
+  }
+  &__contacts{
+    @media (max-width:991px) {
+      margin-top: 20px;
+    }
+
+    p{
+      margin-bottom: 30px;
+    }
+
+    img{
+      margin-right: 34px;
+      max-height: 30px;
+    }
+  }
+  &-form{
+    @media (max-width:991px) {
+      order: -1;
+    }
+    input,textarea{
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid #FFFFFF;
+      margin-top: 27px;
+      margin-bottom: 21px;
+      font-family: $lato;
+    }
+    textarea{
+      margin-top: 16px;
+      height: 114px;
+    }
+    label{
+      font-size: 16px;
+      font-family: $lato;
+      font-weight: 400 ;
+    }
+  }
+  &__btn{
+    cursor: pointer;
+    padding: 15px 41px;
+    margin-left: auto;
+    margin-top: 31px;
+  }
+  &__name{
+    padding-right: 31px;
+    padding-left: 0;
+    @media (max-width: 991px) {
+      padding-right: 0 ;
+    }
+  }
+  .title{
+    margin-bottom: 16px;
+  }
+  .subtitle{
+    margin-bottom: 85px;
+    @media (max-width: 991px) {
+      margin-bottom: 45px;
+    }
+  }
+}
